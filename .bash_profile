@@ -1,2 +1,2 @@
-export MassTransit__HostUri="sb://biobusdev-ricar-torres.servicebus.windows.net"
+export MassTransit__HostUri="sb://biobusdev-00rtg1.servicebus.windows.net"
  
