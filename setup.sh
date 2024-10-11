@@ -1,14 +1,14 @@
 #!/bin/bash
- 
-# Define your environment variable
 
-ENV_VARIABLE="export MassTransit__HostUri='sb://biobusdev-00rtg1.servicebus.windows.net'"
- 
-# Append the environment variable to .bashrc if it's not already present
+ENV_VARIABLE='MassTransit__HostUri="sb://biobusdev-00nvc2.servicebus.windows.net"'
 
-if ! grep -qF "$ENV_VARIABLE" ~/.bashrc; then
+# Check if the environment variable is already present in /etc/environment
 
-    echo "$ENV_VARIABLE" >> ~/.bashrc
+if ! grep -qF "$ENV_VARIABLE" /etc/environment; then
+
+    # Append the environment variable to /etc/environment
+
+    echo "$ENV_VARIABLE" | sudo tee -a /etc/environment > /dev/null
 
 fi
  
