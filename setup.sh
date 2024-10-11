@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ENV_VARIABLE='MassTransit__HostUri="sb://biobusdev-00nvc2.servicebus.windows.net"'
+ENV_VARIABLE='MassTransit__HostUri="sb://biobusdev-00rtg1.servicebus.windows.net"'
 
 # Check if the environment variable is already present in /etc/environment
 
